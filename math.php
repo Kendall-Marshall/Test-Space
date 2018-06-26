@@ -1,19 +1,18 @@
 <!doctype html>
 <html lang="en">
 	<head>
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-
-	<title>I just want to sleep!!!!</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <title>Math page</title>
 	</head>
 	<body>
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-			<a class="navbar-brand" href="#">Navbar</a>
+			<a class="navbar-brand" href="index.html">Navbar</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -23,35 +22,31 @@
 						<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="memes.html">Memes</a>
+						<a class="nav-link" href="#">Memes</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="dankerMemes.html">Danker Memes(in progess)</a>
 					</li>
-					<li class="nav-item active">
-						<a class="nav-link" href="portfolio.html">Portfolio</a>
-					</li>
 					<li class="nav-item">
+							<a class="nav-link" href="portfolio.html">Portfolio</a>
+					</li>
+					<li class="nav-item  active">
 						<a class="nav-link" href="math.html">Some Math</a>
 					</li>
 				</ul>
 			</div>
 		</nav>
-		<div class="container ml-auto top-space">
-			<div class="jumbotron">
-				<h1 class="display-4">Projects</h1>
-
-				<div class="col ">
-					<img src="img/boyfriend.jpg" class="row-3" width="33%" height="33%"/>
-					<img src="img/spongebob.jpg" class="row-3" width="33%" height="33%"/>
-					<img src="img/button.jpg" class="row-2" width="33%" height="33%"/>
-				</div>
-				
-				
-	
-
+		<div class="container">
+			<div class="jumbotron top-space">
+				<h1 class="display-4">Welcome to Math</h1>
+				<?php
+                    $number1 = $_POST['num1'];
+                    $number2 = $_POST['num2'];
+                    $sum = $number1 + $number2;
+					echo "<h1 class=\"display-6\">Your answer is: ".$sum."</h1>";
+				?>
+				<button class="btn btn-warning" onclick="window.location.href = 'math.html';">Go Back</button>
 			</div>
-			
 		</div>
 
 		<!-- Optional JavaScript -->

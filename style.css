@@ -3,8 +3,17 @@
     margin-right: 30px;
 }
 
+.main-form{ 
+    width: 100%;
+    margin: auto;
+}
+
 .top-space{
     margin-top:30px;
+}
+
+.col-space{
+    margin:30px;
 }
 
 body{
